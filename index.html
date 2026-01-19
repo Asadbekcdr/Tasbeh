@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+<div class="app">
+
+    <div class="flex"> 
+        <select class="select">
+            <option value="1">+1</option>
+            <option value="3">+3</option>
+            <option value="10">+10</option>
+            <option value="33">+33</option>
+            <option value="100">+100</option>
+        </select>
+
+        <button class="btn edit">Edit</button>
+
+        <div id="editModal" class="modal hidden ">
+            <div class="modal-content">
+                <h3>Qiymatni tahrirlash</h3>
+                <input type="number" id="editInput" placeholder="Yangi sonni kiriting">
+                <div class="modal-buttons">
+                    <button id="saveBtn" class="btn">Saqlash</button>
+                    <button id="closeBtn" class="btn">Yopish</button>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn reset">Reset</button>
+    </div>
+
+    <div class="count">0</div>
+
+    <div class="wrap">
+        <button class="btna up">
+            <i class="fa-solid fa-angle-up"></i>
+        </button>
+
+        <button class="btna down">
+            <i class="fa-solid fa-angle-down"></i>
+        </button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
